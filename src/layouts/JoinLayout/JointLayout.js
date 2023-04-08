@@ -10,7 +10,7 @@ export const JointLayout = (props) => {
     <div className={styles.container}>
       <div className={styles.topBar}>
         <Link href="/">
-          <Image src="/images/logo.png" alt="Gaming"/>
+          <Image src="/images/logo2.png" alt="Gaming"/>
         </Link>
 
         <Link href="/">
