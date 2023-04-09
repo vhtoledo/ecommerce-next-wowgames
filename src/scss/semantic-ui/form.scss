@@ -10,7 +10,7 @@
           border: 2px solid $border-primary;
           background-color: $background-secondary;
           color: $text-primary;
-          padding: 14px;
+          padding: 18px;
           border-radius: 6px;
   
           &:hover,
@@ -36,5 +36,6 @@
       margin: 0;
       padding: 15.5px 30px;
       border-radius: 6px;
+      margin-top: 20px;
     }
   }

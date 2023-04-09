@@ -32,16 +32,13 @@
 }
 
 .blockLeft {
-    width: 50%;
+    background-image: url("/images/sign-wallpaper.jpg");
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.blockRight {
-    background-image: url("/images/sign-wallpaper.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 50%;
-}

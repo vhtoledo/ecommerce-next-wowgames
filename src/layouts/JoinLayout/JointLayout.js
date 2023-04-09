@@ -20,7 +20,6 @@ export const JointLayout = (props) => {
 
       <div className={styles.blockLeft}>{children}</div>
 
-      <div className={styles.blockRight}/>
     </div>
   )
 }

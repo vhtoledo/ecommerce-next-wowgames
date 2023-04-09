@@ -8,7 +8,7 @@ const SignUpPage = () => {
     <>
       <JointLayout>
         <div className={styles.signIn}>
-          <h3>Crear Cuenta</h3>
+          <h2>Crear Cuenta</h2>
           <RegisterForm/>
         
         <div className={styles.actions}>

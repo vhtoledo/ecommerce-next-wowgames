@@ -25,7 +25,6 @@ export const RegisterForm = () => {
 
   return (
     <Form onSubmit={formik.handleSubmit}>
-      <Form.Group widths="equal">
         <Form.Input
           name="email"
           type="text"
@@ -42,9 +41,7 @@ export const RegisterForm = () => {
           onChange={formik.handleChange}
           error={formik.errors.username}
         />
-      </Form.Group>
 
-      <Form.Group widths="equal">
         <Form.Input
           name="name"
           type="text"
@@ -61,7 +58,6 @@ export const RegisterForm = () => {
           onChange={formik.handleChange}
           error={formik.errors.password}
         />
-      </Form.Group>
 
       <Form.Button type="submit" fluid loading={formik.isSubmitting}>
         Registrarse
