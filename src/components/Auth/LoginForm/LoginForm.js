@@ -1,6 +1,7 @@
 import { Form } from "semantic-ui-react";
 import { useFormik } from "formik";
 import { useRouter } from "next/router";
+import { useAuth } from "@/hooks";
 import { Auth } from "@/api";
 import { initialValues, validationSchema } from "./LoginForm.form";
 
@@ -8,7 +9,7 @@ const authCtrl = new Auth();
 
 export const LoginForm = () => {
   const router = useRouter();
-
+  const { login } = useAuth();
 
   const formik = useFormik({
     initialValues: initialValues(),
@@ -17,8 +18,9 @@ export const LoginForm = () => {
     onSubmit: async (formValue) => {
       try {
         const response = await authCtrl.login(formValue);
-        console.log(response);
-        router.push("/");
+        login(response.jwt);
+        
+        //router.push("/");
       } catch (error) {
         console.error(error);
       }
