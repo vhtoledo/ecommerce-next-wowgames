@@ -45,8 +45,10 @@ export const AuthProvider = (props) => {
     };
     
     const logout = () => {
-        console.log("CERRAR SESION");
-    }
+        tokenCtrl.removeToken();
+        setToken(null);
+        setUser(null);
+    };
 
     const data = {
         accessToken: token,
