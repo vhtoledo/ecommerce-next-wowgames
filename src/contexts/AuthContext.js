@@ -13,7 +13,21 @@ export const AuthProvider = (props) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-      setLoading(false);
+      (async () => {
+        const token = tokenCtrl.getToken();
+
+        if(!token){
+            logout();
+            setLoading(false);
+            return;
+        }
+
+        if (tokenCtrl.hasExpired(token)) {
+            logout();
+        } else {
+            await login(token);
+        }
+      })();
     }, []);
 
     const login = async (token) => {
@@ -30,12 +44,15 @@ export const AuthProvider = (props) => {
         }
     };
     
+    const logout = () => {
+        console.log("CERRAR SESION");
+    }
 
     const data = {
         accessToken: token,
         user,
         login,
-        logout: null,
+        logout,
         updateUser: null,
     };
 
