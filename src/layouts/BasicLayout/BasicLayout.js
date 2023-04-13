@@ -1,6 +1,6 @@
 import { Container } from "semantic-ui-react";
 import classNames from "classnames";
-import { TopBar } from "@/components/Layout";
+import { Footer, TopBar } from "@/components/Layout";
 import styles from "./BasicLayout.module.scss"
 
 export const BasicLayout = (props) => {
@@ -21,7 +21,7 @@ export const BasicLayout = (props) => {
                 </div>
             </Container>
 
-            {/* Footer */}
+            <Footer/>
 
             
         </>
