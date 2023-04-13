@@ -2,8 +2,8 @@ import { BasicLayout } from "@/layouts";
 
 const HomePage = () => {
   return (
-    <BasicLayout isContainer>
-      <h1>Estamos en la HOME</h1>
+    <BasicLayout>
+      <h1 style={{ padding: 100 }}>Estamos en la HOME</h1>
     </BasicLayout>
   )
 }
