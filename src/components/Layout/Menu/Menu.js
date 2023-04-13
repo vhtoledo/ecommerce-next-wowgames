@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Image } from "semantic-ui-react";
+import { Icon, Image, Input } from "semantic-ui-react";
 import { map } from "lodash";
+import classNames from "classnames";
 import { Platform } from "@/api";
 import styles from "./Menu.module.scss";
 
@@ -10,6 +11,9 @@ const platformsCtrl = new Platform();
 export const Menu = (props) => {
     const { isOpenSearch } = props;
     const [platforms, setPlatforms] = useState(null);
+    const [showSearch, setShowSearch] = useState(false);
+
+    const openCloseSearch = () => setShowSearch((prevState) => !prevState)
 
     useEffect(() => {
       (async () => {
@@ -31,6 +35,30 @@ export const Menu = (props) => {
                 {platform.attributes.title}
             </Link>
         ))}
+
+        <button
+            className={styles.search}
+            onClick={openCloseSearch}
+        >
+            <Icon name="search"/>
+        </button>
+
+        <div className={classNames(styles.inputContainer, {
+            [styles.active] : showSearch
+        })}
+        >
+            <Input
+                id="search-games"
+                placeholder="Buscador"
+                className={styles.input}
+                focus={true}
+            />
+            <Icon
+                name="close"
+                className={styles.closeInput}
+                onClick={openCloseSearch}
+            />
+        </div>
     </div>
   )
 }
