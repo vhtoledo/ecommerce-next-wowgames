@@ -1,9 +1,10 @@
-import { Tab } from 'semantic-ui-react'
-import { useRouter } from 'next/router'
-import { BasicLayout } from '@/layouts'
-import { useAuth } from '@/hooks'
-import { Info, Settings } from '@/components/Account'
-import styles from './account.module.scss'
+import { Tab } from 'semantic-ui-react';
+import { useRouter } from 'next/router';
+import { BasicLayout } from '@/layouts';
+import { useAuth } from '@/hooks';
+import { Separator } from '@/components/Shared';
+import { Info, Settings } from '@/components/Account';
+import styles from './account.module.scss';
 
 const accountPage = () => {
   const { user, logout} = useAuth();
@@ -44,6 +45,7 @@ const accountPage = () => {
       render: () => (
         <Tab.Pane attached={false}>
           <Settings.ChangeNameForm/>
+          <Separator height={80}/>
         </Tab.Pane>
       ),
     },
