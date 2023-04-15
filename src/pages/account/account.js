@@ -45,6 +45,9 @@ const accountPage = () => {
       render: () => (
         <Tab.Pane attached={false}>
           <Settings.ChangeNameForm/>
+          <div className={styles.containerForms}>
+            <Settings.ChangeEmailForm/>
+          </div>
           <Separator height={80}/>
         </Tab.Pane>
       ),
