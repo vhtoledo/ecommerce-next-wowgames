@@ -31,7 +31,7 @@ export function GridGames(props) {
                 game.attributes.price,
                 game.attributes.discount
               )}
-              €
+              $
             </span>
           </div>
         </Link>
