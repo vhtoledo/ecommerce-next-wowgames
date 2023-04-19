@@ -26,12 +26,11 @@ export function GridGames(props) {
 
           <div>
             <span>{game.attributes.title}</span>
-            <span className={styles.price}>
+            <span className={styles.price}>$
               {fn.calcDiscountedPrice(
                 game.attributes.price,
                 game.attributes.discount
               )}
-              $
             </span>
           </div>
         </Link>
