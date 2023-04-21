@@ -13,7 +13,7 @@ const platformsId = {
 export default function HomePage() {
   return (
     <>
-      {/*<Seo />*/}
+      <Seo />
 
       <BasicLayout>
         <Home.BannerLastGamePublished />

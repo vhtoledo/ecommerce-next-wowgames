@@ -33,7 +33,7 @@ export default function CartPage() {
 
   return (
     <>
-      {/*/<Seo title="Carrito" />*/}
+      <Seo title="Carrito" />
 
       <CartLayout>
         {currentStep === 1 && <Cart.StepOne games={games} />}

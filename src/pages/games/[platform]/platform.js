@@ -15,7 +15,7 @@ export default function PlatformPage(props) {
 
   return (
     <>
-      {/*<Seo title={`Juegos de ${platform.attributes.title}`} />*/}
+      <Seo title={`Juegos de ${platform.attributes.title}`} />
 
       <BasicLayout relative>
         <Container>

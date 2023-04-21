@@ -3,7 +3,7 @@ import { Tab } from 'semantic-ui-react';
 import { useRouter } from 'next/router';
 import { BasicLayout } from '@/layouts';
 import { useAuth } from '@/hooks';
-import { Separator } from '@/components/Shared';
+import { Seo, Separator } from '@/components/Shared';
 import { Info, Settings, Address, Wishlist, Orders } from '@/components/Account';
 import styles from './account.module.scss';
 
@@ -72,6 +72,7 @@ const accountPage = () => {
   ];
   return (
     <>
+    <Seo title="Mi cuenta"/>
       <BasicLayout isContainer relative>
         <Info/>
 

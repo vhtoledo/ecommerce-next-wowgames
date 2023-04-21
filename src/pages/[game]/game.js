@@ -8,10 +8,10 @@ export default function GamePage(props) {
 
   return (
     <>
-      {/*<Seo
+      <Seo
         title={game.attributes.title}
         description={game.attributes.summary}
-  />*/}
+      />
 
       <BasicLayout>
         <Game.HeaderWallpaper image={wallpaper.data.attributes.url} />
