@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { BasicLayout } from '@/layouts';
 import { useAuth } from '@/hooks';
 import { Separator } from '@/components/Shared';
-import { Info, Settings, Address, Wishlist } from '@/components/Account';
+import { Info, Settings, Address, Wishlist, Orders } from '@/components/Account';
 import styles from './account.module.scss';
 
 const accountPage = () => {
@@ -24,7 +24,8 @@ const accountPage = () => {
       menuItem: "Mis pedidos",
       render: () => (
         <Tab.Pane attached={false}>
-          <p>Mis pedidos...</p>
+          <Orders />
+          <Separator height={80}/>
         </Tab.Pane>
       ),
     },
