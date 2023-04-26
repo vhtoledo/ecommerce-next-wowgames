@@ -41,8 +41,8 @@ export default function HomePage() {
         <Separator height={100} />
 
         <BannerAd
-          title="Registrate y obten los mejores precios"
-          subtitle="¡Compara con otros juegos y elige el tuyo!"
+          title="Registrate en WowGames"
+          subtitle="¡Obten los mejores precios y elige el tuyo!"
           btnTitle="Entrar ahora"
           btnLink="/account"
           image="/images/img01.png"
@@ -54,7 +54,7 @@ export default function HomePage() {
           <Home.LatestGames
             title="Xbox"
             limit={3}
-            platformId={platformsId.Xbox}
+            platformId={platformsId.pc}
           />
         </Container>
 

@@ -4,14 +4,14 @@ import { LoginForm } from "@/components/Auth";
 import { Seo } from "@/components/Shared";
 import styles from "./sign-in.module.scss";
 
-const signInPage = () => {
+const SignInPage = () => {
   return (
     <>
     <Seo title="Iniciar Sesión"/>
 
     <JointLayout>
       <div className={styles.signIn}>
-        <h2>Iniciar sesión  </h2>
+        <h2>Iniciar sesión</h2>
 
         <LoginForm/>
 
@@ -24,4 +24,5 @@ const signInPage = () => {
   );
 };
 
-export default signInPage;
+export default SignInPage;
+

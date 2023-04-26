@@ -1,15 +1,15 @@
 import * as Yup from "yup";
 
-export const initialValues = () => {
-    return {
-      identifier: "hugo21",
-      password: "",
-    };
-  }
+export function initialValues() {
+  return {
+    identifier: "",
+    password: "",
+  };
+}
 
-export const validationSchema = () => {
-    return Yup.object({
-        identifier: Yup.string().required(true),
-        password: Yup.string().required(true),
-    });
+export function validationSchema() {
+  return Yup.object({
+    identifier: Yup.string().required(true),
+    password: Yup.string().required(true),
+  });
 }

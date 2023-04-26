@@ -22,16 +22,34 @@ export const Footer = () => {
                     </ul>
                 </div>
 
+                <div>
+                    <ul>
+                        <Link href="#">Centro de ayuda</Link>
+                        <Link href="#">Soporte y Garantía</Link>
+                        <Link href="#">Cambios y Devoluciones</Link>
+                        <Link href="#">Tienda en Línea</Link>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <Link href="#">Defensa al Consumidor</Link>
+                        <Link href="#">Promociones Bancarias</Link>
+                        <Link href="#">Nuestra Comunidad</Link>
+                        <Link href="#">Trabaja con nosotros</Link>
+                    </ul>
+                </div>
+
                 <div className={styles.social}>
-                    <Button as="a" href="#" circular color="facebook" icon="facebook" />
-                    <Button as="a" href="#" circular color="twitter" icon="twitter" />
-                    <Button as="a" href="#" circular color="instagram" icon="instagram" />
-                    <Button as="a" href="#" circular color="youtube" icon="youtube" />
+                    <Button as="a" href="#" circular color="brown" icon="facebook" />
+                    <Button as="a" href="#" circular color="brown" icon="twitter" />
+                    <Button as="a" href="#" circular color="brown" icon="instagram" />
+                    <Button as="a" href="#" circular color="brown" icon="youtube" />
                 </div>
             </div>
             
             <div className={styles.copyright}>
-                    <span>Copyright @ 2023 Wgames - All rights reserved</span>
+                    <span>Copyright @ 2023 Wowgames - All rights reserved</span>
             </div>
         </Container>
 
