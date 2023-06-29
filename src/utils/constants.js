@@ -1,6 +1,6 @@
 export const ENV = {
-    SERVER_HOST: "http://localhost:1337",
-    API_URL: "http://localhost:1337/api",
+    SERVER_HOST: "https://wowgames.up.railway.app/",
+    API_URL: "https://wowgames.up.railway.app/api",
     ENDPOINTS: {
         AUTH: {
             REGISTER: "auth/local/register",
